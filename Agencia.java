@@ -6,6 +6,8 @@ public class Agencia {
     private int numero;
     private Banco banco;
     private List<ContaIF> contas = new ArrayList<ContaIF>();
+    private List<Cliente> clientes = new ArrayList<Cliente>();
+    
 
     public void cadastrarConta(ContaIF conta) {
         contas.add(conta);
@@ -38,5 +40,13 @@ public class Agencia {
     public Banco getBanco() {
         return banco;
     }
+
+	public List<Cliente> getClientes() {
+		return clientes;
+	}
+
+	public void setClientes(List<Cliente> clientes) {
+		this.clientes = clientes;
+	}
 
 }
